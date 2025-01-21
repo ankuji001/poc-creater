@@ -1,13 +1,19 @@
 
     
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
-
+/* Add some basic styles for the notification */
+#notification-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
 :root {
     --primary-color: #000000;
     --secondary-color: #a5b1aa;
     --background-color: #000000;
-    --text-color: #ced1cf;
-    --input-bg: #281e1e;
+    --text-color: #fcfcfc;
+    --input-bg: #816b6b;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
