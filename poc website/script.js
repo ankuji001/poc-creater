@@ -28,3 +28,28 @@
         // Save the PDF
         doc.save('user-input.pdf');
     }
+  // Create the email template text
+        const emailTemplate = `
+            Hi,
+
+            Here are the details you requested:
+
+            Input 1: ${input1}
+            Input 2: ${input2}
+            Input 3: ${input3}
+            Input 4: ${input4}
+            Input 5: ${input5}
+            Input 6: ${input6}
+            Input 7: ${input7}
+
+            Best regards,
+        `;
+
+        // Copy the email template to the clipboard
+        navigator.clipboard.writeText(emailTemplate).then(() => {
+            alert('Email template copied to clipboard!');
+        }).catch(err => {
+            console.error('Failed to copy: ', err);
+        });
+    }
+
